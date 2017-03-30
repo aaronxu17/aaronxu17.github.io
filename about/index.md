@@ -1,26 +1,33 @@
 ---
 layout: page
-title: About the Jekyll Theme
-excerpt: "So Simple is a responsive Jekyll theme for your words and images."
-modified: 2014-08-08T19:44:38.564948-04:00
+title: About Me
+excerpt: "My basic information"
 image:
-  feature: so-simple-sample-image-4.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: so-simple-sample-image-1.jpg
 ---
 
-Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the follow up to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes) --- by designer slash illustrator [Michael Rose](http://mademistakes.com).
+---
 
-## So Simple Theme is all about:
+Hello! Welcome to visit my homepage! My name is **Yiran Xu**`['i:ran, shoo]`. I am currently a Research Scientist at Intelligent Fusion Technology, Inc. 
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments and subtle animations.
-* Optional large feature images for posts and pages.
-* [Custom 404 page]({{ site.url }}/404.html) to get you started.
-* [Simple site search](https://github.com/christian-fei/Simple-Jekyll-Search)
-* Support for Disqus Comments
+Email: <aaronxu17@gmail.com>
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install So Simple Theme</a>
+## Research Interests
+* **Satellite communication (SATCOM)**: Frequency hopping (FH) and partial-band noise jamming effects (PBNJ).
+* **Wireless heterogeneous network (HetNet)**: Small-cell depolyment, intergerence mitigation, joint mobile association and resource allocation optimization.
+* **Millimeter wave (mmWave) communications**: Propagation measurements and channel models.
+* **Advanced wireless technologies**: Coordinated multipoint (CoMP) processing, MU-MIMO, massive MIMO, non-orthogonal multiple-access (NOMA).
+* **Quality of Experience (QoE) based spectral efficieny (QSE) and energy efficiency (QEE) tradeoff**.
 
-[^1]: Example: *domain.com/category-name/post-title*
+## Research Interests
+* **Programming Languages**: C/C++, Java, Python, MATLAB* **Software**: LaTeX, OPNET* **Database**: MySQL, SQLite* **Operating Systems**: Windows, Linux, Mac OS
+
+
+## Miscellaneous:
+* I learnt to ski and snowboard when I was in Logan, Utah. Greatest Snow on Earth!
+* I have visited several National Parks, and my facoriate one is Zion National Park.
+* I am a fan of Denver Broncos.
+
+
+## Links:
+[Linkedin](https://www.linkedin.com/in/yiranxu/ 'Linkedin-Yiran (Aaron) Xu'), [Google Scholar](https://scholar.google.com/citations?user=jkqs1iEAAAAJ&hl=en 'Google Scholar-Yiran (Aaron) Xu'), [ResearchGate](https://www.researchgate.net/profile/Yiran_Xu 'ResearchGate-Yiran (Aaron) Xu')

@@ -5,8 +5,11 @@ excerpt: "A simple and clean responsive Jekyll theme for words and photos."
 search_omit: true
 ---
 
-<ul class="post-list">
-{% for post in site.posts limit:10 %}
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
-{% endfor %}
+
+<ul>
+<li><h5 id="toc_0">Apr. 2017, a patent application is submitted to USPTO.</h5></li>
+<li><h5 id="toc_1">May. 2016, I started my first job at Intelligent Fusion Technology, Inc. as a Research Scientist.</h5></li>
+<li><h5 id="toc_2">May 2016, I graduated from Utah State University with a Ph.D. degree in Electrical Engineering!</h5></li>
+<li><h5 id="toc_3">Nov. 2015, I successfully defended my Ph.D. dissertation!</h5></li>
 </ul>
+

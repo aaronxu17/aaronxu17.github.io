@@ -1,0 +1,274 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Install and Configure MySQL Connector/C++ on Ubuntu 16.04 &#8211; Yiran (Aaron) Xu</title>
+<meta name="description" content="When I started to install MySQL Connector/C++ on Ubuntu 16.04, I first followed the tutorial on MySQL official Developer Guide. While it did not work well. So, I made some changes when I followed the tutorial for installation and configurations. Hope my personal experience can provide a bit help when you face the same situation. My major steps are list below:
+
+">
+<meta name="keywords" content="tech">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Install and Configure MySQL Connector/C++ on Ubuntu 16.04">
+<meta name="twitter:description" content="When I started to install MySQL Connector/C++ on Ubuntu 16.04, I first followed the tutorial on MySQL official Developer Guide. While it did not work well. So, I made some changes when I followed the tutorial for installation and configurations. Hope my personal experience can provide a bit help when you face the same situation. My major steps are list below:
+
+">
+
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/site-logo.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Install and Configure MySQL Connector/C++ on Ubuntu 16.04">
+<meta property="og:description" content="When I started to install MySQL Connector/C++ on Ubuntu 16.04, I first followed the tutorial on MySQL official Developer Guide. While it did not work well. So, I made some changes when I followed the tutorial for installation and configurations. Hope my personal experience can provide a bit help when you face the same situation. My major steps are list below:
+
+">
+<meta property="og:url" content="http://localhost:4000/blog/install-mysql-connector/">
+<meta property="og:site_name" content="Yiran (Aaron) Xu">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/blog/install-mysql-connector/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Yiran (Aaron) Xu Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://localhost:4000/home/" >Home</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/education/" >Education</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/experience/" >Experience</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/publication/" >Publications</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/blog/" >Blog</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="http://localhost:4000/" class="site-logo" rel="home" title="Yiran (Aaron) Xu"><img src="http://localhost:4000/images/site-logo.jpg" width="200" height="200" alt="Yiran (Aaron) Xu logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://localhost:4000/">Yiran (Aaron) Xu</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">Ph.D., Research Scientist</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          <li><a href="http://localhost:4000/tags/#tech" title="Pages tagged tech">tech</a></li>
+        </ul>
+        
+          <h1 class="entry-title">Install and Configure MySQL Connector/C++ on Ubuntu 16.04</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://localhost:4000/images/site-logo.jpg" class="bio-photo" alt="Yiran (Aaron) Xu bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Yiran (Aaron) Xu</span></span>
+        <span class="entry-date date published"><time datetime="2017-03-29T20:19:55-04:00"><i class="fa fa-calendar-o"></i> March 29, 2017</time></span>
+        
+        
+      </footer>
+      <div class="entry-content">
+        <p>When I started to install MySQL Connector/C++ on Ubuntu 16.04, I first followed the tutorial on MySQL official <a href="https://dev.mysql.com/doc/connector-cpp/en/" title="MySQL Connector/C++ Developer Guide">Developer Guide</a>. While it did not work well. So, I made some changes when I followed the tutorial for installation and configurations. Hope my personal experience can provide a bit help when you face the same situation. My major steps are list below:</p>
+
+<p>1: Make sure your system has satisfied the installation prerequisites;</p>
+
+<p>2: Install MySQL Connector/C++. In this step, I found out that only the source code includes cakelist.txt and cppconn folder. I also download the MySQL Connector/C++ from github:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>	git clone https://github.com/mysql/mysql-connector-cpp
+</code></pre>
+</div>
+
+<p>3: Then I unpack the compressed file and copy&amp;past cppconn to the folder where I stored the MySQL Connector/C++ downloaded from github.</p>
+
+<p>4: Install Boost C++ libraries, Boost 1.56.0 or higher version. I installed Boost 1.58.0.</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>	sudo apt-get install libboost-all-dev
+</code></pre>
+</div>
+
+<p>5: Change location to the top-level directory of the source distribution:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>	<span class="nb">cd</span> /path/to/mysql-connector-cpp
+</code></pre>
+</div>
+
+<p>6: Tell the build system where the Boost files are located by defining the BOOST_ROOT option when you invoke CMake:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>	locate /boost/version.hpp
+    
+	cmake . -DBOOST_ROOT<span class="o">=</span>/path/to/boost_1_58_0
+</code></pre>
+</div>
+
+<p>7: Run CMake to build a Makefile</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>	cmake . 
+</code></pre>
+</div>
+
+<p>8: Use make to build Connector/C++. First make sure you have a clean build, then build the connector:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>	make clean
+    
+	make
+</code></pre>
+</div>
+
+<p>9: Make sure you can see the output message “Linking CXX executable statement” or “Linking CXX executable try”</p>
+
+<p>10: Install the header and library files:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>	make install <span class="o">(</span>may use sudo<span class="o">)</span>
+</code></pre>
+</div>
+
+<p>11: Building Connector/C++ Linux Applications with NetBeans, Select <strong><code class="highlighter-rouge">File</code></strong>, <strong><code class="highlighter-rouge">Project Properties</code></strong> from the main menu. In the <strong><code class="highlighter-rouge">Categories</code></strong>: tree view panel, navigate to <strong><code class="highlighter-rouge">Build</code></strong>, <strong><code class="highlighter-rouge">C++ Compiler</code></strong>. In the <strong><code class="highlighter-rouge">General panel</code></strong>, select <strong><code class="highlighter-rouge">Include Directories</code></strong>. Add</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">/usr/include/boost</code>; <code class="highlighter-rouge">/usr/local/mysql/connector-c++2.0/include</code>; <code class="highlighter-rouge">/path/to/mysql-connector-c++-1.1.8/driver</code></p>
+</blockquote>
+
+<p><strong>NOTE</strong>: It seems that the above directorie can be not included, still can build successfully.</p>
+
+<p>12: In the same panel, navigate to <strong><code class="highlighter-rouge">Linker</code></strong>-&gt;<strong><code class="highlighter-rouge">Additional Library Directories</code></strong>. Add</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">/usr/local/lib</code>; <code class="highlighter-rouge">/usr/lib</code></p>
+</blockquote>
+
+<p>13: In the same panel, navigate to <strong><code class="highlighter-rouge">Libraries</code></strong>. I choose the Dynamic Library, so that <code class="highlighter-rouge">libmysqlcppconn.so</code> is chosen for</p>
+
+<blockquote>
+  <p><strong>Add Library</strong> (NOT Add Library File): (dynamic) <code class="highlighter-rouge">/usr/lib/libmysqlcppconn.so</code>, display<code class="highlighter-rouge">"mysqlcppconn"</code></p>
+</blockquote>
+
+<p><strong>Note</strong>: Make sure the libmysqlcppconn.so is included in the added librart directories.</p>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/blog/hello-world/" class="btn" title="Hello World">Previous</a>
+      
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2017 Yiran (Aaron) Xu. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  
+	
+  <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://localhost:4000';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>
