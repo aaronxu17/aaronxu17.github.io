@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Publication
+title: Publications
 excerpt: "My research publications"
 image:
   feature: so-simple-sample-image-1.jpg
@@ -10,7 +10,7 @@ image:
 
 > Please feel free to contact me (Click [Here](mailto:aaronxu17@gmail.com)) if you are interested in my research or have any question regarding to my work.
 
-## Patent
+## Patents
 0. **Yiran Xu**, Gang Wang, Sixiao Wei, Genshe Chen, Khanh Pham, and Erik Blasch, "Methods and Systems for High Throughput and Cyber-Secure Data Communications", Pending, Mar. 2017.
 
 ## Journal Articles
