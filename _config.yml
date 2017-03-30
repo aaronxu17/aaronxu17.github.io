@@ -38,7 +38,10 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 owner:
   name: Yiran (Aaron) Xu
   avatar: site-logo.jpg
-  email: xuyiran.cn@gmail.com
+  email: aaronxu17@gmail.com
   disqus-shortname: aaron
-  linkedin: #https://www.linkedin.com/in/yiranxu/
+  linkedin: yiranxu
+  googlescholar: Yiran Xu
+  researchgate: Yiran_Xu
+
 
