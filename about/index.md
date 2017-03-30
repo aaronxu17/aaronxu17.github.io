@@ -8,7 +8,7 @@ image:
 
 ---
 
-Hello! Welcome to visit my homepage! My name is **Yiran Xu**`['i:ran, shoo]`. I am currently a Research Scientist at Intelligent Fusion Technology, Inc. 
+Hello! Welcome to my homepage! My name is **Yiran Xu**`['i:ran, shoo]`. I am currently a Research Scientist at Intelligent Fusion Technology, Inc. 
 
 Email: <aaronxu17@gmail.com>
 
@@ -20,7 +20,11 @@ Email: <aaronxu17@gmail.com>
 * **Quality of Experience (QoE) based spectral efficieny (QSE) and energy efficiency (QEE) tradeoff**.
 
 ## Research Interests
-* **Programming Languages**: C/C++, Java, Python, MATLAB* **Software**: LaTeX, OPNET* **Database**: MySQL, SQLite* **Operating Systems**: Windows, Linux, Mac OS
+
+* **Programming Languages**: C/C++, Java, Python, MATLAB
+* **Software**: LaTeX, OPNET
+* **Database**: MySQL, SQLite
+* **Operating Systems**: Windows, Linux, Mac OS
 
 
 ## Miscellaneous:
