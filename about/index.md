@@ -29,10 +29,11 @@ Email: <aaronxu17@gmail.com>
 
 ## Miscellaneous:
 * I learnt to ski and snowboard when I was in Logan, Utah. Greatest Snow on Earth!
-* I have visited several National Parks, and my facoriate one is Zion National Park.
-* I am a fan of Denver Broncos.
+* I enjoy hiking, road trip, going to the gym after work.
+* I have visited several National Parks, e.g., Yellowstone, Arches, Zion, Yosemite, etc. My favorite is Zion National Park.
+* I am a fan of Denver Broncos. 
 
 
 ## Links:
 
-[Linkedin](https://www.linkedin.com/in/yiranxu/ 'Linkedin-Yiran (Aaron) Xu'), [Google Scholar](https://scholar.google.com/citations?user=jkqs1iEAAAAJ&hl=en 'Google Scholar-Yiran (Aaron) Xu'),[GitHub](https://github.com/aaronxu17 'GitHub-Yiran (Aaron) Xu'), [ResearchGate](https://www.researchgate.net/profile/Yiran_Xu 'ResearchGate-Yiran (Aaron) Xu')
+[Linkedin](https://www.linkedin.com/in/yiranxu/ 'Linkedin-Yiran (Aaron) Xu'), [Google Scholar](https://scholar.google.com/citations?user=jkqs1iEAAAAJ&hl=en 'Google Scholar-Yiran (Aaron) Xu'), [GitHub](https://github.com/aaronxu17 'GitHub-Yiran (Aaron) Xu'), [ResearchGate](https://www.researchgate.net/profile/Yiran_Xu 'ResearchGate-Yiran (Aaron) Xu')
