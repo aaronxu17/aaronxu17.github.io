@@ -41,7 +41,7 @@ Jun. 2015 to Aug. 2015</span>
 </p>
 
 * Developing API-driven micro-services that combine into large and complex platforms.
-* Planning and executing highly parallel distributed object storage transformations and migrations. Specifically, demonstrated load-banlancing scheme design to combat I/O bottleneck in cloud storage systems.
+* Planning and executing highly parallel distributed object storage transformations and migrations. Specifically, demonstrating load-balancing scheme design to combat I/O bottleneck in cloud storage systems.
 * Participating in troubleshooting, capacity planning and analysis, performance analysis activities.
 
 ### New York University
