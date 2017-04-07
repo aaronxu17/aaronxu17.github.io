@@ -12,13 +12,13 @@ When I started to install MySQL Connector/C++ on Ubuntu 16.04, I first followed 
 
 1: Make sure your system has satisfied the installation prerequisites;
 
-2: Install MySQL Connector/C++. In this step, I found out that only the source code includes cakelist.txt and cppconn folder. I also download the MySQL Connector/C++ from github:
+2: Install MySQL Connector/C++. In this step, I download one copy [mysql-connector-c++-1.1.8-linux-ubuntu16.04-x86-64bit.tar.gz](https://dev.mysql.com/downloads/file/?id=467847) (since I need its two folders `/include` and `/lib`, where `/include` has `/cppconn`, and `/lib` includes `libmysqlcppconn.so`,`libmysqlcppconn-static.a`, etc.) from <https://dev.mysql.com/downloads/connector/cpp/> and merge it with the copy which is from github:
 
 ```bash
 	git clone https://github.com/mysql/mysql-connector-cpp
 ```
 
-3: Then I unpack the compressed file and copy&past cppconn to the folder where I stored the MySQL Connector/C++ downloaded from github.
+3: I merge `/include` and `/lib` to `/mysql-connector-cpp` since only in `mysql-connector-cpp` I have cmakefile.
 
 4: Install Boost C++ libraries, Boost 1.56.0 or higher version. I installed Boost 1.58.0.
 
@@ -32,12 +32,12 @@ When I started to install MySQL Connector/C++ on Ubuntu 16.04, I first followed 
 	cd /path/to/mysql-connector-cpp
 ```
 
-6: Tell the build system where the Boost files are located by defining the BOOST_ROOT option when you invoke CMake:
+6: Tell the build system where the Boost files are located (in my case, I find it in `/usr/include/boost`) by defining the BOOST_ROOT option when you invoke CMake:
 
 ```bash
-	locate /boost/version.hpp
+	locate -i /boost/version.hpp
     
-	cmake . -DBOOST_ROOT=/path/to/boost_1_58_0
+	cmake . -DBOOST_ROOT=/path/to/boost directory
 ```
 
 7: Run CMake to build a Makefile
@@ -70,10 +70,10 @@ When I started to install MySQL Connector/C++ on Ubuntu 16.04, I first followed 
 
 12: In the same panel, navigate to **`Linker`**->**`Additional Library Directories`**. Add
 
-> `/usr/local/lib`; `/usr/lib`
+> `/usr/local/lib`
 
 13: In the same panel, navigate to **`Libraries`**. I choose the Dynamic Library, so that `libmysqlcppconn.so` is chosen for
 
->  **Add Library** (NOT Add Library File): (dynamic) `/usr/lib/libmysqlcppconn.so`, display`"mysqlcppconn"`
+>  **Add Library** (NOT Add Library File): (dynamic) `/usr/local/lib/libmysqlcppconn.so`, display`"mysqlcppconn"`
    
-   **Note**: Make sure the libmysqlcppconn.so is included in the added librart directories.
+   **Note**: Make sure the libmysqlcppconn.so and libmysqlcppconn.so.7 are included in the added library directories. In my case, I copy these two files from `/mysql-connector-cpp/lib/` directory.
