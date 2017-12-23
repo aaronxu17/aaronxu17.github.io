@@ -12,12 +12,13 @@ image:
 ### Intelligent Fusion Technology, Inc.
 
 <p style="text-align:left;">
-Wireless System Engineer/Research Scientist<span style="float:right;">
+Sr. Research Scientist/Wireless System Engineer<span style="float:right;">
 May 2016 to present</span>
 </p>
 
-* Design performance evaluation toolkit for satellite communication (SATCOM) system. Study impacts of partial-band noise jamming on frequency hopping SATCOM (FH-SATCOM) based on link-level simulation.
-* Link calibration based on data-aided channel SNR estimation. Work on back-end SNR sensing (MATLAB) and interaction with GNU radio (USRP testbed) via remote database connection (MySQL).
+* Designed performance evaluation toolkit for satellite communication (SATCOM) system. Studied impacts of partial-band noise jamming on frequency hopping SATCOM (FH-SATCOM) based on link-level simulation.
+* Link calibration based on data-aided/non-data-aided SNR estimation. Implemented SNR estimation (MATLAB and C++) and integrated it with GNUradio (USRP testbed) via data exchange by remote database connection (MySQL).
+* Led two research projects: mmWave channel modeling and cognitive radio system development. 
 * Write project proposals and create intellectual property leading to patent applications. Submitted one US patent application.
 
 ### Utah State University

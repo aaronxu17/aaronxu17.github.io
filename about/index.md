@@ -16,6 +16,7 @@ Email: <aaronxu17@gmail.com>
 * **Satellite communication (SATCOM)**: Frequency hopping (FH) and partial-band noise jamming effects (PBNJ).
 * **Wireless heterogeneous network (HetNet)**: Small-cell depolyment, intergerence mitigation, joint mobile association and resource allocation optimization.
 * **Millimeter wave (mmWave) communications**: Propagation measurements and channel models.
+* **Cognitive radio (CR) system**: Spectrum sensing, SNR estimation, non-cooperative frequency hopping, jamming/interference detection and classification, noise modulated covert communication.
 * **Advanced wireless technologies**: Coordinated multipoint (CoMP) processing, MU-MIMO, massive MIMO, non-orthogonal multiple-access (NOMA).
 * **Quality of Experience (QoE) based spectral efficieny (QSE) and energy efficiency (QEE) tradeoff**.
 
