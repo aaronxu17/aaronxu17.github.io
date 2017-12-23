@@ -11,10 +11,10 @@ image:
 > Please feel free to contact me (Click [Here](mailto:aaronxu17@gmail.com)) if you are interested in my research or have any question regarding to my work.
 
 ## Patents
-0. **Yiran Xu**, Gang Wang, Sixiao Wei, Genshe Chen, Khanh Pham, and Erik Blasch, "Methods and Systems for High Throughput and Cyber-Secure Data Communications", Submitted, Mar. 2017.
+0. US Patent (pending), "Methods and Systems for High Throughput and Cyber-Secure Data Communications", 2017.
 
 ## Journal Articles
-0. **Yiran Xu**, Gang Wang, Sixiao Wei, Erik Blasch, Khanh Pham, and Genshe Chen, “High throughput, Cyber Security Multi-User Superposition Covert Communication System,” submitted to *IEEE Aerospace and Electronic Systems Magazine*, Jan. 2017.
+0. **Yiran Xu**, Gang Wang, Sixiao Wei, Erik Blasch, Khanh Pham, and Genshe Chen, “High throughput, Cyber Security Multi-User Superposition Covert Communication System,” accepted by *IEEE Aerospace and Electronic Systems Magazine*, 2017.
 0. **Yiran Xu**, Rose Hu, Yi Qian, and Taieb Znati, “[Video Quality-based Spectrum and Energy Efficient Mobile Association in Wireless Heterogeneous Networks](http://ieeexplore.ieee.org/document/7337383/),” *IEEE Trans. Commun.*, vo. 64, no. 2, pp.805-817, Feb. 2016.
 0. Qian Li, Rose Hu, **Yiran Xu**, and Yi Qian, “[Optimal Fractional Frequency Reuse and Power Control in the Heterogeneous Wireless Networks](http://ieeexplore.ieee.org/document/6515998/),” *IEEE Trans. Wireless Commun.*, vol. 12, no. 6, pp. 2658-2668, Jun. 2013.
 
