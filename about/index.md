@@ -8,7 +8,7 @@ image:
 
 ---
 
-Hello! Welcome to my homepage! My name is **Yiran Xu**`['i:ran, shoo]` (许怡然). I am currently a Research Scientist at Intelligent Fusion Technology, Inc. 
+Hello! Welcome to my homepage! My name is **Yiran Xu**`['i:ran, shoo]` (许怡然). I am currently a Sr. Research Scientist at Intelligent Fusion Technology, Inc. 
 
 Email: <aaronxu17@gmail.com>
 
