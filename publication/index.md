@@ -14,7 +14,7 @@ image:
 0. US Patent (pending), "Methods and Systems for High Throughput and Cyber-Secure Data Communications", 2017.
 
 ## Journal Articles
-0. **Yiran Xu**, Gang Wang, Sixiao Wei, Erik Blasch, Khanh Pham, and Genshe Chen, “High throughput, Cyber Security Multi-User Superposition Covert Communication System,” *IEEE Aerospace and Electronic Systems Magazine*, vol. 33, no. 2, pp. 4-15, Feb. 2018.
+0. **Yiran Xu**, Gang Wang, Sixiao Wei, Erik Blasch, Khanh Pham, and Genshe Chen, “[High throughput, Cyber Security Multi-User Superposition Covert Communication System](https://ieeexplore.ieee.org/document/8332371/),” *IEEE Aerospace and Electronic Systems Magazine*, vol. 33, no. 2, pp. 4-15, Feb. 2018.
 0. **Yiran Xu**, Rose Hu, Yi Qian, and Taieb Znati, “[Video Quality-based Spectrum and Energy Efficient Mobile Association in Wireless Heterogeneous Networks](http://ieeexplore.ieee.org/document/7337383/),” *IEEE Trans. Commun.*, vo. 64, no. 2, pp. 805-817, Feb. 2016.
 0. Qian Li, Rose Hu, **Yiran Xu**, and Yi Qian, “[Optimal Fractional Frequency Reuse and Power Control in the Heterogeneous Wireless Networks](http://ieeexplore.ieee.org/document/6515998/),” *IEEE Trans. Wireless Commun.*, vol. 12, no. 6, pp. 2658-2668, Jun. 2013.
 
