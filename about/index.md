@@ -8,16 +8,15 @@ image:
 
 ---
 
-Hello! Welcome to my homepage! My name is **Yiran Xu**`['i:ran, shoo]` (许怡然). I am currently a Sr. Research Scientist at Intelligent Fusion Technology, Inc. 
-
-Email: <aaronxu17@gmail.com>
+Hello! Welcome to my homepage! My name is **Yiran (Aaron) Xu**`['i:ran, shoo]` (许怡然). I am currently a Technical Advisor at Oblon, McClelland, Maier & Neustadt, L.L.P.. 
 
 ## Research Interests
-* **Satellite communication (SATCOM)**: Frequency hopping (FH) and partial-band noise jamming effects (PBNJ).
+* **5G wireless technologies**: Coordinated multipoint (CoMP) processing, MU-MIMO, massive MIMO, non-orthogonal multiple-access (NOMA).
+* **Machine learning**: Artificial neural network, supervised/unsupervised machine learning.
 * **Wireless heterogeneous network (HetNet)**: Small-cell depolyment, intergerence mitigation, joint mobile association and resource allocation optimization.
 * **Millimeter wave (mmWave) communications**: Propagation measurements and channel models.
+* **Satellite communication (SATCOM)**: Frequency hopping (FH) and partial-band noise jamming effects (PBNJ).
 * **Cognitive radio (CR) system**: Spectrum sensing, SNR estimation, non-cooperative frequency hopping, jamming/interference detection and classification, noise modulated covert communication.
-* **Advanced wireless technologies**: Coordinated multipoint (CoMP) processing, MU-MIMO, massive MIMO, non-orthogonal multiple-access (NOMA).
 * **Quality of Experience (QoE) based spectral efficieny (QSE) and energy efficiency (QEE) tradeoff**.
 
 ## Research Interests

@@ -9,17 +9,30 @@ image:
 ---
 
 ## Work Experience
+
+### Oblon, McClelland, Maier & Neustadt, L.L.P.
+
+<p style="text-align:left;">
+Technical Advisor<span style="float:right;">
+Oct 2018 to Present</span>
+</p>
+
+* Draft patent applications and patent prosecution for domestic and international clients
+
+
+
 ### Intelligent Fusion Technology, Inc.
 
 <p style="text-align:left;">
 Sr. Research Scientist/Wireless System Engineer<span style="float:right;">
-May 2016 to present</span>
+May 2016 to Sep 2018</span>
 </p>
 
-* Designed performance evaluation toolkit for satellite communication (SATCOM) system. Studied impacts of partial-band noise jamming on frequency hopping SATCOM (FH-SATCOM) based on link-level simulation.
+* SATCOM system emulator and performance evaluation toolkit development.
 * Link calibration based on data-aided/non-data-aided SNR estimation. Implemented SNR estimation (MATLAB and C++) and integrated it with GNUradio (USRP testbed) via data exchange by remote database connection (MySQL).
-* Led two research projects: mmWave channel modeling and cognitive radio system development. 
-* Write project proposals and create intellectual property leading to patent applications. Submitted one US patent application.
+* mmWave propagation modeling in urban environments. Improved the ray tracing performance by using machine learning techniques and saved 40% runtime with 78% prediction accuracy. 
+* Cognitive radio system development with a decision tree based jamming detector and classifier. Achieved high throughput, covertness, and jam-resistance
+* Write project proposals and create intellectual property leading to patent applications.
 
 ### Utah State University
 
@@ -28,13 +41,13 @@ Research Assistant and Teaching Assistant<span style="float:right;">
 Sep. 2011 to May. 2016</span>
 </p>
 
-* Mobile association and resource allocation algorithm design for next generation (5G) wireless heterogeneous networks; convex/non-convex and combinatorial problem optimization in wireless communications.
+* Radio resource management in heterogeneous networks (HetNets), applying convex/non-convex and combinatorial optimization techniques for joint mobile association and resource allocation problems.
 * Developed advanced cooperative transmission methods, e.g., CoMP, and improve 30% of cell-edge users' SINR by 10 dB.
-* Explored new radio access technique, e.g., Non-orthogonal multiple access (NOMA), in wireless heterogeneous networks. The proposed cooperative NOMA scheme can increase network throughput by 20% compared with MU-MIMO scheme.
-* Analyze video quality-based spectrum and energy efficient video communications over heterogeneous networks. Intelligently allocate bandwidth resource to improve user's perceived video quality in system design.
+* Explored new radio access technique, e.g., Non-orthogonal multiple access (NOMA). The proposed cooperative NOMA scheme can increase network throughput by 20% compared with MU-MIMO scheme.
+* Tradeoff study between video quality-based spectrum efficiency (QSE) and energy efficiency (QEE). Conducted multi-objective optimization to investigate their impacts on resource allocation and user performance.
 * Conducted lectures for undergraduate and graduate students. Responsible for instructing tutorials, holding office hours, and supervising lab sessions (C and OPNET).
 
-### EMC Corporation
+### Dell EMC
 
 <p style="text-align:left;">
 Data Center Operation Intern<span style="float:right;">
