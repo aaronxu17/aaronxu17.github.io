@@ -19,7 +19,7 @@ Hello! Welcome to my homepage! My name is **Yiran (Aaron) Xu**`['i:ran, shoo]` (
 * **Cognitive radio (CR) system**: Spectrum sensing, SNR estimation, non-cooperative frequency hopping, jamming/interference detection and classification, noise modulated covert communication.
 * **Quality of Experience (QoE) based spectral efficieny (QSE) and energy efficiency (QEE) tradeoff**.
 
-## Research Interests
+## Technical Skills
 
 * **Programming Languages**: C/C++, Java, Python, MATLAB
 * **Software**: LaTeX, OPNET
